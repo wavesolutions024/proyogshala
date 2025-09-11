@@ -2,7 +2,7 @@ import React from 'react'
 import "./Header.scss"
 const Header = () => {
 
-    const navs 
+  
   return (
     <>
       <div class="header_parent parent">
