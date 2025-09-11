@@ -1,0 +1,26 @@
+
+:root{
+    --max-width:1400px
+}
+
+
+
+
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.parent{
+    width: 100%;
+
+    .cont{
+        max-width: var(--max-width);
+        margin: auto;
+        padding: 0 20px;
+    }
+}
