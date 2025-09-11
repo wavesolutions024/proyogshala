@@ -51,10 +51,12 @@ const Header = () => {
             ))}
           </div>
           <div class="contact_section">
-            <div class="call_icon">
+            <a href="" class="btn">
+                <div class="call_icon">
               <IoMdCall />
             </div>
-            <a href="">+91 1234567890</a>
+            <span href="">+91 1234567890</span>
+            </a>
             <div class="hamburger">
               <div class="open" onClick={() => setActive(true)}>
                 <span></span>

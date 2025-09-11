@@ -49,15 +49,18 @@
       align-items: center;
       gap: 8px;
 
-      .call_icon {
+      .btn {
         display: flex;
         justify-content: center;
         align-items: center;
-      }
+        gap: 8px;
+        .call_icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
 
-      a {
-        text-decoration: none;
-        color: var(--black);
+
       }
 
       .hamburger {
@@ -107,9 +110,8 @@
       transition: var(--trans);
       box-shadow: var(--shadow);
 
-      &.active{
+      &.active {
         left: 0;
-
       }
 
       .top {
