@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './App.scss'
-import { BrowserRouter, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Header from './comp/header/Header'
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <BrowserRouter>
         <Header/>
         <Routes>
-          
+          <Route/>
         </Routes>
         </BrowserRouter>
       </div>
