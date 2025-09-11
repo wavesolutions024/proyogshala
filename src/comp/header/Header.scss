@@ -1,6 +1,9 @@
 .header_parent {
   width: 100%;
   height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
 
   .header_cont {
     display: flex;
@@ -16,7 +19,7 @@
 
       a {
         text-decoration: none;
-        color: var(--black);
+        color: var(--white);
         padding: 14px 10px;
         transition: var(--trans);
 

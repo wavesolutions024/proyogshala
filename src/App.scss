@@ -16,8 +16,13 @@
   box-sizing: border-box;
 }
 
-.parent {
+body{
   width: 100%;
+  overflow-x: hidden;
+}
+
+.parent {
+  width: 100% !important;
 
   .cont {
     max-width: var(--max-width);
@@ -34,4 +39,12 @@
   border-radius: 25px;
   text-decoration: none;
   cursor: pointer;
+}
+
+
+.bg-img-cover{
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  
 }
