@@ -1,32 +1,78 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Herosection.scss";
-import hero_image from "../../assets/hero_model.png"
+import { Swiper, SwiperSlide } from "swiper/react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
 const Herosection = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, easing: "ease-in-out" });
+  }, []);
+
+  const handleSlideChange = () => {
+    AOS.refresh(); // re-check AOS animations
+  };
+
   return (
-    <>
-      <div class="herosection_parent parent bg-img-cover">
-        <div class="herosection_cont cont">
-          <div class="left">
+    <div className="herosection_parent parent ">
+      <Swiper
+        spaceBetween={0}
+        centeredSlides={true}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+        onSlideChange={handleSlideChange}
+      >
+        <SwiperSlide className="swiper-slide parent bg-img-cover">
+          <div className="herosection_cont cont">
             <h1>
-              <span>
-                Lorem ipsum dolor sit amet, consectetur elit.{" "}
+              <span data-aos="fade-down"  data-aos-delay="300">Lorem ipsum dolor sit amet.</span>
+              <br />
+              <span className="primary" data-aos="fade-up" data-aos-delay="300">
+                Officiis, ipsa.
               </span>
-              Officiis, ipsa.
             </h1>
-            <p>
+            <p data-aos="fade-up" data-aos-delay="300">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
               soluta labore, quibusdam accusamus commodi iste magnam qui ea
-              necessitatibus quidem, debitis quisquam? Iusto aliquam aut
-              asperiores nisi tempora sit laborum.
+              necessitatibus quidem, debitis quisquam?
             </p>
-            <div class="btn">Know More</div>
+            <div className="btn" data-aos="zoom-in" data-aos-delay="600">
+              Know More
+            </div>
           </div>
-          <div class="right">
-            <img src={hero_image} alt=""/>
+        </SwiperSlide>
+
+        <SwiperSlide className="swiper-slide parent bg-img-cover">
+          <div className="herosection_cont cont">
+            <h1>
+              <span data-aos="fade-down">Another slide headline</span>
+              <br />
+              <span className="primary" data-aos="fade-up">
+                Slide subtitle
+              </span>
+            </h1>
+            <p data-aos="fade-up" data-aos-delay="300">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div className="btn" data-aos="zoom-in" data-aos-delay="600">
+              Know More
+            </div>
           </div>
-        </div>
-      </div>
-    </>
+        </SwiperSlide>
+      </Swiper>
+    </div>
   );
 };
 

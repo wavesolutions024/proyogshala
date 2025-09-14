@@ -1,51 +1,65 @@
 .herosection_parent {
   width: 100%;
   height: 100svh;
-  background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.534),
-      rgba(0, 0, 0, 0.534)
-    ),
-    url("../../assets/nature.png");
 
-  .herosection_cont {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .mySwiper {
+    width: 100%;
     height: 100%;
 
-    .left {
-      width: 50%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      gap: calc(var(--unit) + 5px);
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: var(--accent);
+    }
 
-      h1 {
-        color: white;
+    .swiper-pagination-bullets,
+    .swiper-pagination-horizontal {
+      transform: rotate(90deg);
+      bottom: var(--swiper-pagination-bottom, 100px);
 
-        span {
-          color: var(--accent);
-        }
+      .swiper-pagination-bullet-active {
+        background-color: var(--accent) !important;
       }
 
-      p {
-        color: rgba(255, 255, 255, 0.589);
-        max-width: 80ch;
+      .swiper-pagination-bullet {
+        background-color: white;
       }
     }
 
-    .right {
-      width: 50%;
+    .swiper-slide {
+      width: 100%;
       height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.534),
+          rgba(0, 0, 0, 0.534)
+        ),
+        url("../../assets/bg_yoga.png");
 
-      img {
-        width: 100%;
+      .herosection_cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        flex-direction: column;
+        gap: calc(var(--unit));
+
+        h1 {
+          color: white;
+          text-align: center;
+          font-size: calc(var(--unit) * 4);
+
+          .primary {
+            color: var(--accent);
+          }
+        }
+
+        p {
+          color: rgba(255, 255, 255, 0.589);
+          max-width: 80ch;
+          text-align: center;
+          font-size: calc(var(--unit) + 5px);
+        }
       }
     }
   }
