@@ -4,6 +4,7 @@ import './App.scss'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Header from './comp/header/Header'
 import Home from './pages/home/Home'
+import Services from './pages/service/Services'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Header/>
         <Routes>
           <Route  path='/' element={<Home/>} />
+          <Route  path='/services' element={<Services/>} />
         </Routes>
         </BrowserRouter>
       </div>

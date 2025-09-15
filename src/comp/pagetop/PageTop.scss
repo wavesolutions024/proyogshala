@@ -1,0 +1,21 @@
+.pagetop_parent{
+    background: red;
+    width: 100%;
+    height: 250px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .pagetop_cont{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h2{
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+    }
+}
