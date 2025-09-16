@@ -43,7 +43,7 @@ const Home = () => {
       <div class="yoga_types_parent parent">
         <div class="yoga_types_cont cont">
           <div class="left">
-            <h3>YOGA TYPES / YOGA POSITIONS</h3>
+            <h3>YOGA TYPES / <span>YOGA POSITIONS</span> </h3>
             <div class="types">
               <div class="left">
                 <div class="type">
@@ -132,11 +132,11 @@ const Home = () => {
           </div>
 
           <div class="right">
-            <div class="image"></div>
+            <div class="image bg-img-cover"></div>
           </div>
         </div>
 
-        <div class="left_panel"></div>
+        <div class="left_panel bg-img-cover"></div>
       </div>
     </>
   );

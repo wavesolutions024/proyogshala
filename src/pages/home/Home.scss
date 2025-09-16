@@ -85,7 +85,7 @@
 
 .yoga_types_parent {
   width: 100%;
-  background-color: rgb(231, 231, 231);
+  background-color: rgb(243, 243, 243);
   position: relative;
 
   .yoga_types_cont {
@@ -102,6 +102,12 @@
       align-items: flex-start;
       gap: var(--unit);
       padding: 80px 0px;
+
+      h3{
+        span{
+          color: var(--accent);
+        }
+      }
 
       .types {
         width: 100%;
@@ -163,7 +169,7 @@
       .image {
         width: 60%;
         aspect-ratio: 1;
-        background-color: yellow;
+        background: url("../../assets/yoga_types/type_right.jpg");
       }
     }
   }
@@ -172,7 +178,7 @@
     width: 350px;
     height: 100%;
     position: absolute;
-    background-color: red;
+    background: url("../../assets/yoga_types/type_bg.jpg");
     right: 0;
     top: 0;
   }
