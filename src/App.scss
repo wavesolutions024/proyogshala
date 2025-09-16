@@ -46,7 +46,7 @@ p{
   padding: 10px 20px;
   background-color: var(--accent);
   color: var(--black);
-  border-radius: 25px;
+  // border-radius: 25px;
   text-decoration: none;
   cursor: pointer;
   border: 1px solid var(--accent);
@@ -63,6 +63,13 @@ p{
 .bg-img-cover{
   background-position: center center !important;
   background-size: cover !important;
+  background-repeat: no-repeat !important;
+  
+}
+
+.bg-img-contain{
+  background-position: center center !important;
+  background-size: contain !important;
   background-repeat: no-repeat !important;
   
 }

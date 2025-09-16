@@ -1,0 +1,78 @@
+.about_section_parent {
+  width: 100%;
+  height: auto;
+  padding: 40px 0px;
+
+  .about_section_cont {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    .left {
+      width: 50%;
+      aspect-ratio: 1;
+      position: relative;
+
+
+      .floral{
+        width: 80%;
+        height: 100%;
+        background: url("../../assets/floral.png");
+        opacity: 0.5;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+    }
+
+    .right {
+      width: 50%;
+      height: auto;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: var(--unit);
+
+      .section_indi {
+        padding: 8px 12px;
+        background-color: #ff6a0070;
+        color: black;
+      }
+
+      h1 {
+        max-width: 30ch;
+      }
+
+      .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        gap: 5px;
+
+        .top {
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 5px;
+          .tag {
+            height: 100%;
+            aspect-ratio: 1;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
