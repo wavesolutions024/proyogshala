@@ -26,9 +26,13 @@ const Services = () => {
               <img src={img1} alt="" />
             </div>
           </div>
+        </div>
+      </div>
 
-          <div className="services_wraper">
-            <div className="left">
+      <div className="parent service_parent">
+        <div className="cont service_cont " >
+          <div className="services_wraper " style={{background:"white"}}>
+            <div className="left ">
               <h3>Service name goes here...</h3>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
@@ -41,9 +45,13 @@ const Services = () => {
               <img src={img1} alt="" />
             </div>
           </div>
+        </div>
+      </div>
 
+      <div className="parent service_parent">
+        <div className="cont service_cont row-reverse">
           <div className="services_wraper row-reverse">
-            <div className="left">
+            <div className="left ">
               <h3>Service name goes here...</h3>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
@@ -87,7 +95,7 @@ const Services = () => {
             <div className="cards-wrap">
               <div className="top">
                 <h3>Advanced</h3>
-               <div className="price">
+                <div className="price">
                   <span>
                     <MdCurrencyRupee />
                   </span>

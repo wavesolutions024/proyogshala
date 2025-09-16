@@ -7,9 +7,7 @@ const PageTop = () => {
 
         <div className=" pagetop_parent bg-img-cover ">
             <div className=" pagetop_cont">
-                <h2>Services</h2>
-
-              
+                <h2>Services</h2>              
             </div>
         </div>
     </div>
