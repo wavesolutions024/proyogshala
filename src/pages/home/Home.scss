@@ -12,9 +12,11 @@
       width: 50%;
       aspect-ratio: 1;
       position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-
-      .floral{
+      .floral {
         width: 80%;
         height: 100%;
         background: url("../../assets/floral.png");
@@ -24,7 +26,11 @@
         left: 50%;
         transform: translate(-50%, -50%);
       }
-      
+
+      img {
+        position: relative;
+        width: 80%;
+      }
     }
 
     .right {
@@ -70,6 +76,248 @@
             align-items: center;
             font-size: 20px;
             color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.yoga_types_parent {
+  width: 100%;
+  background-color: rgb(231, 231, 231);
+  position: relative;
+
+  .yoga_types_cont {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    .left {
+      width: 50%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: var(--unit);
+      padding: 80px 0px;
+
+      .types {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .left,
+        .right {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          padding: 0;
+          gap: 10px;
+
+          .type {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+
+            .icon {
+              width: 80px;
+              height: 80px;
+              background-color: rgb(194, 181, 154);
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              img {
+                width: 70%;
+              }
+            }
+
+            .content {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: flex-start;
+              gap: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      width: 50%;
+      height: auto;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+
+      .image {
+        width: 60%;
+        aspect-ratio: 1;
+        background-color: yellow;
+      }
+    }
+  }
+
+  .left_panel {
+    width: 350px;
+    height: 100%;
+    position: absolute;
+    background-color: red;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .about_section_parent {
+    .about_section_cont {
+      flex-direction: column;
+
+      .left {
+        width: 100%;
+      }
+
+      .right {
+        width: 100%;
+
+        .description {
+          .top {
+            .tag {
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about_section_parent {
+    .about_section_cont {
+      .right {
+        .description {
+          .top {
+            .tag {
+              width: 50px;
+              height: 50px;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .about_section_parent {
+    .about_section_cont {
+      .right {
+        .description {
+          .top {
+            p {
+              font-size: 14px;
+            }
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .about_section_parent {
+    .about_section_cont {
+      .right {
+        padding: 0px !important;
+        .description {
+          .top {
+            p {
+              font-size: 12px;
+            }
+          }
+
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1345px) {
+  .yoga_types_parent {
+    .left_panel {
+      width: 200px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1035px) {
+  .yoga_types_parent {
+    .yoga_types_cont {
+      .right {
+        .image {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 779px) {
+  .yoga_types_parent {
+    .yoga_types_cont {
+      flex-direction: column-reverse;
+      padding: 20px 10px;
+      gap: 20px;
+      .left {
+        width: 100%;
+        padding: 0px;
+      }
+      .right {
+        width: 100%;
+        justify-content: center;
+        padding: 0px 0px;
+
+
+        .image{
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .left_panel {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 479px){
+  .yoga_types_parent{
+    .yoga_types_cont{
+      .left{
+        .types{
+          flex-direction: column;
+          .left,.right{
+            width: 100%;
           }
         }
       }
