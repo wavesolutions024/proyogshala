@@ -5,7 +5,7 @@ const PageTop = () => {
   return (
     <div>
 
-        <div className=" pagetop_parent ">
+        <div className=" pagetop_parent bg-img-cover ">
             <div className=" pagetop_cont">
                 <h2>Services</h2>
 

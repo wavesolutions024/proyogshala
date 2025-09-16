@@ -1,6 +1,6 @@
 :root {
   --max-width: 1400px;
-  --unit: 12px;
+  --unit: 16px;
   --black: #000000;
   --white: #ffffff;
   --accent: #ffbb00;
@@ -33,6 +33,13 @@ body{
     padding: 0 20px;
   }
 }
+
+
+ h2 {
+      font-size: 38px;
+      font-weight: 500;
+    }
+
 
 p{
   font-size: 16px;
