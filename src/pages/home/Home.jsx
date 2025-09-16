@@ -1,6 +1,7 @@
 import React from "react";
 import Herosection from "../../comp/herosection/Herosection";
 import "./Home.scss";
+
 const Home = () => {
   return (
     <>
@@ -12,7 +13,7 @@ const Home = () => {
 
             </div>
 
-            <img src="" alt=""/>
+       
           </div>
           <div class="right">
             <div class="section_indi">About Us</div>
