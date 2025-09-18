@@ -7,7 +7,7 @@ import { MdCurrencyRupee } from "react-icons/md";
 const Services = () => {
   return (
     <>
-      <PageTop />
+      <PageTop title="Services" />
 
       <div className="parent service_parent">
         <div className="cont service_cont row-reverse">

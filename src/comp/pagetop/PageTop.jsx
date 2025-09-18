@@ -1,13 +1,13 @@
 import React from 'react'
 import "./PageTop.scss"
 
-const PageTop = () => {
+const PageTop = ({title}) => {
   return (
     <div>
 
         <div className=" pagetop_parent bg-img-cover ">
             <div className=" pagetop_cont">
-                <h2>Services</h2>              
+                <h2>{title}</h2>              
             </div>
         </div>
     </div>

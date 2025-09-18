@@ -1,0 +1,121 @@
+.contact-parent {
+    padding: 50px 10px;
+
+    .contact-cont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: calc(var(--unit) *3);
+        flex-direction: column;
+
+        .top {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            gap: var(--unit);
+
+            .connect-wrap {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background: var(--background);
+                gap: calc(var(--unit));
+                padding: 20px;
+
+                span {
+                    svg {
+                        font-size: 38px;
+                        color: var(--accent);
+                    }
+                }
+
+                p {
+                    text-align: center;
+                }
+
+            }
+        }
+
+        .bottom {
+            display: flex;
+            flex-direction: column;
+            gap: var(--unit);
+            align-items: center;
+            justify-content: center;
+            width: 700px;
+
+            form {
+                background: var(--background);
+                padding: 20px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: var(--unit);
+                align-items: center;
+                justify-content: center;
+
+
+                .row {
+                    display: flex;
+                    gap: var(--unit);
+                    width: 100%;
+
+
+                    input {
+                        width: 100%;
+                        padding: 10px;
+                        border: 1px solid #ccc;
+
+                        &::placeholder {
+                            color: rgb(172, 172, 172);
+                        }
+
+                    }
+                }
+
+                textarea {
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    width: 100%;
+
+
+
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width: 800px) {
+    .contact-parent {
+        .contact-cont {
+            .top {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .bottom {
+            width: 100%;
+                form {
+                    .row {
+                        flex-direction: column;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .contact-parent {
+        .contact-cont {
+            .top {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+}
