@@ -1,0 +1,12 @@
+.footer_parent{
+    width: 100%;
+    height: auto;
+    background-color: #2F2A24;
+
+    .footer_cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
