@@ -26,7 +26,12 @@ const Footer = () => {
               </div>
             </div>
             <div class="other_pages">
-              
+              <h3>Quick Links</h3>
+              <div class="links">
+                <Link to="/">Privacy</Link>
+                <Link to="/">About</Link>
+                
+              </div>
             </div>
             <div class="contact"></div>
           </div>

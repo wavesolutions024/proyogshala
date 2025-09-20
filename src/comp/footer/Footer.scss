@@ -39,7 +39,7 @@
         }
       }
 
-      .pages {
+      .pages ,.other_pages{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -47,6 +47,24 @@
 
         h3 {
           color: var(--white);
+          font-size: calc(var(--unit) * 1.5);
+        }
+
+        .links {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          gap: 14px;
+          width: 100%;
+
+          a {
+            text-decoration: none;
+            color: var(--white);
+        &:hover{
+            color: var(--accent);
+        }
+          }
         }
       }
     }
