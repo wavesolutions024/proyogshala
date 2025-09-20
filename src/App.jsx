@@ -1,5 +1,4 @@
 import React from 'react'
-
 import './App.scss'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Header from './comp/header/Header'
@@ -8,6 +7,7 @@ import Services from './pages/service/Services'
 import About from './pages/about/About'
 import Contact from './pages/contact/Contact'
 import Footer from './comp/footer/Footer'
+import Shankanad from './pages/shankanad/Shankanad'
 
 function App() {
 
@@ -22,6 +22,7 @@ function App() {
           <Route  path='/services' element={<Services/>} />
           <Route  path='/about' element={<About/>} />
           <Route  path='/contact' element={<Contact/>} />
+          <Route  path='/shankanad' element={<Shankanad/>} />
         </Routes>
         <Footer/>
         </BrowserRouter>
