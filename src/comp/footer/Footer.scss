@@ -1,12 +1,54 @@
-.footer_parent{
-    width: 100%;
-    height: auto;
-    background-color: #2F2A24;
+.footer_parent {
+  width: 100%;
+  height: auto;
+  background-color: #2f2a24;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px 0px;
 
-    .footer_cont{
+  .footer_cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .top_section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+
+      .logo_section,
+      .pages,
+      .other_pages,
+      .contact {
+        width: 300px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: var(--unit);
+      }
+
+      .logo_section {
+        .logo {
+          width: 100px;
+          height: 100px;
+          background-color: red;
+        }
+      }
+
+      .pages {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        h3 {
+          color: var(--white);
+        }
+      }
     }
+  }
 }
